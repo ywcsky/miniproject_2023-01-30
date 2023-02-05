@@ -45,7 +45,10 @@
             </section>
         </section>
         </main>
-        <footer></footer>
     </div>
+    <footer>
+        <span>대표이사 : 서정민 | 이메일 : ywcsky2@gmail.com | 사업자 등록번호 : 999-99-99999 | 주소지 : 서울특별시 을지로 KH정보교육원 | 전화번호 : 010.7725.7340</span>
+    </footer>
+
 </body>
 </html>
