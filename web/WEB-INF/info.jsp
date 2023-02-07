@@ -23,7 +23,7 @@
 <body>
 <div class="container">
   <header>
-    <section id="logocon"><a href="./index.jsp"> <img src="./img/okky-logo-big.png" alt="" id="logo"></a></section>
+    <section id="logocon"><a href="index_1.jsp"> <img src="./img/okky-logo-big.png" alt="" id="logo"></a></section>
     <nav id="category">
       <ul id="category_list">
         <li class="menu"><a href="/border/qna">Q&A</a></li>

@@ -65,6 +65,16 @@
                 border-radius: 10px;
                 float: left;
             }
+        .index{
+            line-height: 23px;
+            padding-left: 8px;
+        }
+        .index_border_span{
+            font-size: 15px;
+        }
+        .index_border_span_subject{
+            font-size: 20px;
+        }
             #it{
                 width: 40%;
                 height: 400px;

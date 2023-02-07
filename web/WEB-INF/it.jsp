@@ -17,9 +17,9 @@
         <section id="logocon" ><a href="/"> <img src="/img/okky-logo-big.png" alt="" id="logo"></a></section>
         <nav id="category">
             <ul id="category_list">
-                <li class="menu"><a href="/border/qna?page=1">Q&A</a></li>
-                <li class="menu"><a href="/border/community?page=1">커뮤니티</a></li>
-                <li class="menu"><a href="/border/it?page=1">지식</a></li>
+                <li class="menu"><a href="<c:url value="/border/qna?page=1"/>">Q&A</a></li>
+                <li class="menu"><a href="<c:url value="/border/community?page=1"/>">커뮤니티</a></li>
+                <li class="menu"><a href="<c:url value="/border/it?page=1"/>">지식</a></li>
                 <li class="menu"><a href="/border/notice?page=1">공지사항</a></li>
             </ul>
         </nav>
@@ -55,7 +55,7 @@
                         <ul class="main_list">
                             <c:forEach items="${bList }" var="border">
                                 <li class="main_list_li"><span>${border.memberNickname}</span> · <span>${border.borderDate}</span>
-                                    <br><span class="li_subject">${border.borderSubject}</span> <img src="/img/count.svg" class="count_img"><span class="li_count">${border.borderCount}</span>
+                                    <br><span class="li_subject"><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span> <img src="/img/count.svg" class="count_img"><span class="li_count">${border.borderCount}</span>
                                 </li><hr>
                             </c:forEach>
                             <li class="border_paging_li">

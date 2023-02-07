@@ -25,7 +25,7 @@ public class MemberJoinServlet extends HttpServlet {
         MemberService mJoinService = new MemberService();
         int result = mJoinService.registerMember(member);
         if(result > 0){
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("/WEB-INF/index_1.jsp");
         }
     }
 }

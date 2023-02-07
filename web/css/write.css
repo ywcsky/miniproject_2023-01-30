@@ -1,0 +1,11 @@
+.input_content_area{
+    margin : 0 auto;
+    width: 718px;
+    border : 0;
+    height: 576px;
+}
+.table_content{
+    padding-left: 0;
+}
+.table_content > span {
+}

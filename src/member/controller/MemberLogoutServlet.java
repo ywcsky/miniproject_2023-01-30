@@ -14,7 +14,7 @@ public class MemberLogoutServlet extends HttpServlet {
             session.removeAttribute("memberId");
             session.removeAttribute("memberNickName");
             System.out.println("세션 : 삭제완료");
-            response.sendRedirect("/");
+            response.sendRedirect("/WEB-INF/index_1.jsp");
     }
 
     @Override

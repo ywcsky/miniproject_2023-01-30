@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="test2">
+    <output-path>$PROJECT_DIR$/out/artifacts/test2</output-path>
+    <root id="archive" name="test2.war">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="artifact" artifact-name="miniproject_2023-01-30:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.servlet.api" />
+          <element id="library" level="project" name="jstl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

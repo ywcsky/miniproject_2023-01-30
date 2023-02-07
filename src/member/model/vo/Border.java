@@ -14,6 +14,16 @@ public class Border {
     private String memberNickname;
     private int categoryNo;
 
+    public Border() {
+    }
+
+    public Border(String borderSubject, String borderContent, String memberNickname, int categoryNo) {
+        this.borderSubject = borderSubject;
+        this.borderContent = borderContent;
+        this.memberNickname = memberNickname;
+        this.categoryNo = categoryNo;
+    }
+
     public int getBorderNo() {
         return borderNo;
     }

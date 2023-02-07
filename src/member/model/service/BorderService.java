@@ -24,4 +24,25 @@ public class BorderService {
 
         return pageData;
     }
+
+    public HashMap<Integer, List<Border>> getIndexBorderList(){
+        Connection conn = JDBCTemplate.getConnection();
+         return bDao.selectAllList(conn);
+    }
+
+    public Border borderView(int borderNo) {
+        Connection conn = JDBCTemplate.getConnection();
+        return bDao.selectBorderView(conn, borderNo);
+    }
+
+    public int writeBorder(Border border) {
+        Connection conn = JDBCTemplate.getConnection();
+        int result = bDao.insertBorder(conn, border);
+        if(result > 0){
+            JDBCTemplate.commit(conn);
+        } else {
+            JDBCTemplate.rollback(conn);
+        }
+        return result;
+    }
 }

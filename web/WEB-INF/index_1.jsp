@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Okky - All That Developer</title>
@@ -55,16 +55,10 @@
                         <div id="qna-container" class="mainPageList"><p class="icon-name">Q&A</p><img
                                 src="./img/questions.svg" alt="" class="icon"></div>
                     </a></li>
-                    <li class="index"><span></span> 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                </ul>
+                        <c:forEach items="${bList_1 }" var="border">
+                            <li class="index"><span>${border.memberNickname}</span> · <span>${border.borderDate}</span><br><span><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span></li>
+                            <hr>
+                        </c:forEach>
             </section>
             <section id="comunity">
                 <ul>
@@ -75,15 +69,10 @@
                                 <img src="./img/community.svg" alt="" class="icon">
                             </div>
                         </a></li>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
+                    <c:forEach items="${bList_2 }" var="border">
+                        <li class="index"><span>${border.memberNickname}</span> · <span>${border.borderDate}</span><br><span><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span></li>
+                        <hr>
+                    </c:forEach>
                 </ul>
             </section>
             <section id="it">
@@ -93,15 +82,10 @@
                                                                                                     alt="" class="icon">
                         </div>
                     </a></li>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
+                    <c:forEach items="${bList_3 }" var="border">
+                        <li class="index"><span class="index_border_span">${border.memberNickname} · ${border.borderDate}</span><br><span class="index_border_span_subject"><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span></li>
+                        <hr>
+                    </c:forEach>
                 </ul>
             </section>
             <section id="notice">
@@ -110,15 +94,10 @@
                         <div id="notice-container" class="mainPageList"><p class="icon-name">공지사항</p><img
                                 src="./img/notice.svg" alt="" class="icon"></div>
                     </a></li>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
-                    <hr>
-                    <li class="index">닉네임 시간<br>글제목</li>
+                    <c:forEach items="${bList_4 }" var="border">
+                        <li class="index"><span>${border.memberNickname}</span> · <span>${border.borderDate}</span><br><span><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span></li>
+                        <hr>
+                    </c:forEach>
                 </ul>
             </section>
         </section>
@@ -128,6 +107,8 @@
 <footer>
     <span>대표이사 : 서정민 | 이메일 : ywcsky2@gmail.com | 사업자 등록번호 : 999-99-99999 | 주소지 : 서울특별시 을지로 KH정보교육원 | 전화번호 : 010.7725.7340</span>
 </footer>
+<script>
 
+</script>
 </body>
 </html>

@@ -24,8 +24,8 @@ public class MemberLoginServlet extends HttpServlet {
         Member member = mService.findOneById(memberId);
         if(memberPw.equals(member.getMemberPw())){
             HttpSession session = request.getSession();
-            session.setAttribute("memberId",memberId);
-            response.sendRedirect("/index.jsp");
+            session.setAttribute("memberId",member.getMemberNickName());
+            response.sendRedirect("/WEB-INF/index_1.jsp");
         }else {
             response.sendRedirect("/WEB-INF/join.jsp");
         }

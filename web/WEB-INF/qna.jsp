@@ -56,7 +56,7 @@
                     <ul class="main_list">
                         <c:forEach items="${bList }" var="border">
                         <li class="main_list_li"><span>${border.memberNickname}</span> · <span>${border.borderDate}</span>
-                            <br><span class="li_subject">${border.borderSubject}</span> <img src="/img/count.svg" class="count_img"><span class="li_count">${border.borderCount}</span>
+                            <br><span class="li_subject"><a href="/border?no=${border.borderNo}">${border.borderSubject}</a></span> <img src="/img/count.svg" class="count_img"><span class="li_count">${border.borderCount}</span>
                         </li><hr>
                         </c:forEach>
                         <li class="border_paging_li">
